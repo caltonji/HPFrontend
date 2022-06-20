@@ -7,7 +7,6 @@ import {
     }
     from '@material-ui/core';
 import * as React from 'react';
-import * as qs from 'qs';
 import axios from 'axios';
 import './QueryHP.css';
 
@@ -29,7 +28,7 @@ interface IQueryHPState {
     loading: boolean
 }
 const title = "Ask a Trivia Question about Harry Potter and the Sorcerer's Stone.";
-const base_uri = "http://127.0.0.1:5000"
+const base_uri = "http://harrypotterb2.azurewebsites.net"
 
 export default class QueryHP extends React.Component<any, IQueryHPState> {
 
@@ -49,10 +48,11 @@ export default class QueryHP extends React.Component<any, IQueryHPState> {
         this.setState({
             loading: true
         });
+        
         axios.get<APIResponse>(base_uri + "/search", {
             params: {
               q: query
-            }
+            },
         })
         .then((response) => {
             console.log(response);
