@@ -1,11 +1,11 @@
 .GetToken-login-button {
-    margin-top:150px !important;
+    margin-top: 150px !important;
 }
 
-.GetToken-text {
+/* .GetToken-text {
     margin-top:100px !important;
     max-width: 80%;
-}
+} */
 
 .GetToken-spinner {
     position: absolute;
