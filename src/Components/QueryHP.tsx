@@ -18,6 +18,7 @@ interface IQueryHPState {
     options: string[]
 }
 const title = "Harry Potter Trivia Bot.";
+// const base_uri = "http://127.0.0.1:5000"
 const base_uri = "https://harrypotterf1.azurewebsites.net"
 
 export default class QueryHP extends React.Component<any, IQueryHPState> {
@@ -146,6 +147,12 @@ export default class QueryHP extends React.Component<any, IQueryHPState> {
                                         }}
                                         fullWidth
                                         variant="filled"
+                                        onKeyPress={(ev) => {
+                                            if (ev.key === 'Enter') {
+                                                this.handleSubmit();
+                                                ev.preventDefault();
+                                            }
+                                        }}
                                     />
                                 } />
                         </Grid>
