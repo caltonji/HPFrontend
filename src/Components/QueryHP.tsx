@@ -112,8 +112,8 @@ export default class QueryHP extends React.Component<any, IQueryHPState> {
                 justifyContent="center"
                 spacing={8}
             >
-                <Grid item>
-                    <Typography variant="h3">
+                <Grid item id="grid_title">
+                    <Typography variant="h3" >
                         {title}
                     </Typography>
                 </Grid>
