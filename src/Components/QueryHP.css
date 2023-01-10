@@ -33,5 +33,10 @@
 
 /* add padding to top of grid_title */
 #grid_title {
-    margin-top: 50px;
+    margin-top: 10px;
+}
+
+.info_button {
+    margin-top: 10px;
+    margin-right: 10px;
 }

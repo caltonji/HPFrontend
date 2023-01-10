@@ -17,7 +17,7 @@ interface IQueryHPState {
     loading: boolean,
     options: string[]
 }
-const title = "Harry Potter Trivia Bot.";
+const title = "Harry Potter Trivia Bot";
 // const base_uri = "http://127.0.0.1:5000"
 const base_uri = "https://harrypotterf1.azurewebsites.net"
 
@@ -112,6 +112,10 @@ export default class QueryHP extends React.Component<any, IQueryHPState> {
                 justifyContent="center"
                 spacing={8}
             >
+                {/* align items to the right */}
+                <Grid item container justify="flex-end" className="info_button">
+                    <Button target="_blank" href="https://introductory.medium.com/a-harry-potter-trivia-bot-powered-by-gpt-3-b9607d93efd1">About</Button>
+                </Grid >
                 <Grid item id="grid_title">
                     <Typography variant="h3" >
                         {title}
@@ -180,7 +184,7 @@ export default class QueryHP extends React.Component<any, IQueryHPState> {
                         </Typography>
                     </Grid>
                 }
-            </Grid>
+            </Grid >
         );
     }
 }
