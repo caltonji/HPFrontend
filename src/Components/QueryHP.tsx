@@ -27,8 +27,8 @@ interface IQueryHPState {
     lastResponse: IResponse | null,
     loading: boolean
 }
-const title = "Ask a Trivia Question about Harry Potter and the Sorcerer's Stone.";
-const base_uri = "http://127.0.0.1:5000/"
+const title = "Ask a Trivia Question about Harry Potter and the Sorcerer's Stone";
+const base_uri = "https://harrypotterextractivef1.azurewebsites.net/"
 
 export default class QueryHP extends React.Component<any, IQueryHPState> {
 
