@@ -39,7 +39,8 @@ export default class QueryHP extends React.Component<any, IQueryHPState> {
         console.log("getting query");
         console.log(query);
         this.setState({
-            loading: true
+            loading: true,
+            answer: ""
         });
 
         axios.get<string>(base_uri + "/answer", {
