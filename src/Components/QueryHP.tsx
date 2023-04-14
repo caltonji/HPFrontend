@@ -148,7 +148,7 @@ export default class QueryHP extends React.Component<any, IQueryHPState> {
                                         id="filled-multiline-flexible"
                                         label="Your Question"
                                         onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => {
-                                            this.onChangeQuery(event.target.value, true);
+                                            this.onChangeQuery(event.target.value, false /* temporarily disable suggestions */);
                                         }}
                                         fullWidth
                                         variant="filled"
